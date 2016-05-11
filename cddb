@@ -1,0 +1,29 @@
+#!/bin/bash
+#
+# cddb
+# 
+# command line utility that creates and saves a CD databse
+#
+# Created by John Van Note
+# Created on 12/01/11
+#
+
+#permission to execute
+chmod +x album.py
+chmod +x cddb.py
+
+# gives user help if they forgets the proper command
+if [ "$#" -eq 0 ] ; then
+  python cddb.py h
+else
+	case "$1" in 
+		-a ) python cddb.py a;; #add
+  	-d ) python cddb.py d;; #delete
+  	-l ) python cddb.py l;; #list
+		-h ) python cddb.py h;; #help
+		* ) echo "Incorrect arguments entered" ;
+				echo "Try using cddb -h for help";;
+	esac
+fi
+
+#eof
