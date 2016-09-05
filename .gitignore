@@ -1,4 +1,7 @@
 
+# Dont add phony database
+*.db
+
 # Created by https://www.gitignore.io/api/python
 
 ### Python ###
