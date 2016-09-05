@@ -26,13 +26,13 @@ class album(object):
   # @return a list of strings for the file
   def display(self):
     display = []
-    display.append( self.art_ )
-    display.append( str(self.yr_) + " " + self.nm_ )
+    display.append(self.art_)
+    display.append(str(self.yr_) + " " + self.nm_)
     for track in self.trx_:
-      display.append( "-" + track )
+      display.append("-" + track)
     return display
   
-	# getArt: gets the artist 
+  # getArt: gets the artist 
   # @return artist of album (string)
   def __getArt__(self):
     return self.art_
