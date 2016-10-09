@@ -16,6 +16,7 @@ import sys
 import os.path
 import shutil
 import array
+import click
 from album import *
 
 data = "cddb.db" 
