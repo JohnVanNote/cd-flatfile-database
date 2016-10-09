@@ -2,38 +2,25 @@ John Van Note
 12/01/11
 
 Files include:
-- README
-- album.py
-- cddb.py
-- cddb
-- makefile
+- README.md - this file
+- album.py - Album class file (should be capitalized)
+- cddb.py - Executable that runs the utility
+- cddb - The utility source itself
+- makefile - makefile for ease of testing
 
-This is a command line utility known as cddb (may have to be run as './cddb')
+This is a command line utility known as cddb (may have to be run as './cddb').
 
-It creates a cd database that can have items added, deleted, and displayed.
-The command
+See below for more details:
 ```
-cddb -a
-```
-Allows a user to add a cd to the list
+./cddb -h
 
-The command
-```
-cddb -d
-```
-Allows a user to delete a cd from the list
+The cddb is a utility that keeps a flat file database of cd entries
 
-The command 
+Options:
+    -l, --list-album    Displays a list of albums
+    -d, --delete-album    Deletes album entry from database
+    -a, --add-album    Adds album entry to database
+    -h, --usage        Displays use message and quits utility
 ```
-cddb -l
-```
-Lists the current database.
 
-For help
-```
-cddb -h
-```
-Follow the prompts in all circumstances.
-
-*the database will be kept in a file created and maintained by the program
-called "cddb.db"
+This is just an exercise.
